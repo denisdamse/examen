@@ -19,15 +19,18 @@ class Program
 
         if(cardverify==0)
         {
-
+            PaymentSystem x= new PaymentSystem();
+            OrderProcessor.FulfillOrder(comanda1, x);
         }
         else if(paypalverify==0)
         {
-            
+            PaymentSystem x = new PaymentSystem();
+            OrderProcessor.FulfillOrder(comanda1, x);
         }
         else if(cryptoverify==0)
         {
-            
+            PaymentSystem x = new PaymentSystem();
+            OrderProcessor.FulfillOrder(comanda1, x);
         }
     }
 }
